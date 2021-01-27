@@ -18,8 +18,13 @@ defaults:
     values:
       layout: "default"
 
-url: "https://Zlisch.github.io"
+url: "https://zlisch.github.io"
+baseurl: ""
+
 plugins: 
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+
+sass:
+  style: compressed
