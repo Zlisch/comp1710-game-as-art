@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "new.css",
+	"sources": [
+		"new.scss",
+		"_sass/new.sass"
+	],
+	"sourcesContent": [
+		"@import \"new\";",
+		".clickable {\n    color: yellow; }\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,UAAU,AAAC,CACP,KAAK,CAAE,MAAM,CAAG"
+}

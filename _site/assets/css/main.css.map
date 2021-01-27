@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";",
-		".current {\n    color: yellow; }\n"
+		".current {\n    color: yellow;\n    background-color: red; }\n"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,AAAC,CACL,KAAK,CAAE,MAAM,CAAG"
+	"mappings": "ACAA,AAAA,QAAQ,AAAC,CACL,KAAK,CAAE,MAAM,CACb,gBAAgB,CAAE,GAAG,CAAG"
 }
