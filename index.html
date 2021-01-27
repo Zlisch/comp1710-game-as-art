@@ -10,9 +10,7 @@ title: Home
   </head>
   <body>
     <h1>{{"Hello World!" | downcase}}</h1>
-    
-    <p>You'll find the css in  <a href="{{ '/assets/css/main.css' | relative_url }}">{{ '/assets/css/main.css' | relative_url }}</a></p>
-    
+        
     <p>site.url: {{ site.url }}</p>
 
     <p>site.baseurl: {{ site.baseurl }}</p>
@@ -20,8 +18,6 @@ title: Home
     <p>site.url + site.baseurl: {{ site.url | append: site.baseurl }}</p>
 
     <p>full_base_url: {{ site.url | append: site.baseurl | default: site.github.url }}</p>
-
-    <p>worked href: /css/main.css + above</p>
 
   </body>
 </html>
