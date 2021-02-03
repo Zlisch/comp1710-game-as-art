@@ -1,15 +1,14 @@
 <!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <!-- <link rel="stylesheet" type="style/css" hred="https://zlisch.github.io/assets/css/main.css"> -->
-        <link rel="stylesheet" type="style/css" hred="{{ '/assets/css/main.css' | relative_url }}">
-        {% feed_meta %}
-        {% seo %}
-    </head>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+    
+    {%- include head.html -%}
+
     <body>
-        {% include navigation.html %}
+
+        {%- include header.html -%}
+        
         {{ content }}
+
     </body>
+
 </html>
