@@ -1,7 +1,16 @@
-<header class="site-bar">
+<header class="site-header">
 
     <div class="wrapper">
-        <a class="site-title" rel="author" href="{{ '/'' | relative_url }}">{{ page.title | escape }}</a>
+        {%- assign page_paths = site.header_pages | default: default_paths -%}
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">Z</a><br>
+
+        <nav class="site-nav">
+            <div class="trigger">
+                {%- for item in site.data.navigation -%}
+                    <a href="{{ item.link }}" {%- if page.url !=  item.link -%}class="page-link"{%- else -%}class="page-link-current"{%- endif -%}>{{ item.name }}</a>
+                {%- endfor -%}
+            </div>
+        </nav>
     </div>
 
 </header>

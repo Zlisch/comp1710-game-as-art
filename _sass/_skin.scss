@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// palatte
+$color-light: #ffffff;
+$color-dark: #000000;
+$color-shadow: #e6e6e6;
+$color-deep-shadow: #666666;
+$color-test: grey;
+
+$site-title-color: #ffffff;
+
+$text-color: $color-dark;
+$background-color: $color-test;
+// $background-color: $color-light;
+// $code-background-color:
+
+$link-base-color: $color-dark;
+$link-visited-color: $color-deep-shadow;
+$link-hover-color-shallow: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 50%, rgba(255,255,255,1) 100%);
+$link-hover-color: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(196,196,196,1) 50%, rgba(255,255,255,1) 100%);
+
+$border-color-01: $color-shadow;
+$border-color-02: $color-deep-shadow;

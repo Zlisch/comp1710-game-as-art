@@ -1,0 +1,45 @@
+/**
+ * Site-header
+ */
+.site-header {
+    position: relative;
+}
+
+.site-title {
+    @include relative-font-size(3);
+    font-weight: 300;
+    color: $site-title-color;
+    text-shadow: 1px 0 4px $color-dark;
+
+    // &:visited {
+    //   color: $site-title-color;
+    //   text-shadow: 1px 0 4px $color-dark;
+    // }
+}
+
+@mixin home-link($home-link-current: false) {
+    display: block;
+    line-height: $base-line-height;
+    padding-right: 10px;
+    margin: $spacing-unit / 7;
+
+    &:hover {
+        @if (not $home-link-current) {
+            background: $link-hover-color-shallow;
+        }
+    }
+}
+
+.site-nav {
+    font-family: $code-font-family;
+    text-align: right;
+
+    .page-link {
+        @include home-link;
+    }
+
+    .page-link-current {
+        @include home-link(true);
+        background: $link-hover-color;
+    }
+}
