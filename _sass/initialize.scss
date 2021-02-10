@@ -18,6 +18,12 @@ $table-text-align: left;
 // Width of the content area
 $content-width: 800px;
 
+$on-palm: 600px;
+$on-laptop: 800px;
+
+$on-medium: $on-palm;
+$on-large: $on-laptop;
+
 @mixin relative-font-size($ratio) {
   font-size: #{$ratio}rem;
 }
