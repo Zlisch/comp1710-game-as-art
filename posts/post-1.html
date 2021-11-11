@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Header section. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <title>Games as Art</title>
+</head>
+
+<!-- Body section. -->
+<body>
+
+    <!-- Background animation "Starry-night" using star image and mask image. -->
+    <div id="starry-night">
+        <img src="../Images/myStars.png" alt="" id="stars">
+        <div id="twinkling"></div>
+    </div>
+
+    <!-- Website Logo. -->
+    <h1><img src="../Images/logo-compressed.png" alt=""></h1>
+
+    <!-- Open "menu" division -->
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            
+            <li>
+                <a href="../nav/blogs.html" class="active-page">Blogs</a>
+                <ul>
+                    <li><a href="../nav/inspirations.html">Albums</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../nav/sitemap.html">Site Map +</a>
+                <ul>
+                    <li><a href="../nav/sourcelog.html">Source Logs</a></li>
+                    <li><a href="../nav/feedback.html">Feedback Form</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <!-- Close "menu" division. -->
+    </div>
+
+    <!-- Open page title division. -->
+    <div class="container home-title">
+        <h1>About My Site</h1>
+
+    <!-- Close page title division. -->
+    </div>
+
+    <!-- Open page content division. -->
+    <div class="container line-height last-margin post-container">
+    
+      <div class="section post-1">
+        <h2><i>Now I can use JavaScript to implement a simple pagination, an image slider and multiple image albums. </i></h2>
+        <span>Zina Lu</span><span>|</span><span>May 24, 2021</span>
+        <br>
+        <br>
+      </div>
+      <br>
+
+      <h2 class="post-subtitle">What I have learned</h2>
+      <div class="section post-2">
+          <h3>Use JavaScript to generate dynamic html content based on user behavior</h3>
+          <p>Before this project I was building my own website using Jekyll, a static HTML generator with SASS empowered. But I knew nothing about JavaScript because I didn’t have a big motivation to learn it in a way with immense practices.</p>
+          <div class="post-image-wrapper">
+            <div class="post-image">
+                <img src="../Images/posts/post-1/2.jpg" alt="">
+                <span class="post-caption">Wrote five JS files for the website.</span>
+            </div>
+            <p>Now I can use JavaScript to implement a simple pagination, an image slider and multiple image albums. DOM tree can be flexibly edited by JavaScript and that’s why JavaScript is far more powerful than pure CSS or HTML.</p>
+          </div>
+      </div>
+      <br>
+
+      <h2 class="post-subtitle">Validation, formatting, and organization</h2>
+      <div class="section post-3">
+          <p>Keeping files and codes in organized is always a good practice, though this is a relatively small website. I find not only does it make later work much more efficient, but also helps me to better understand the progress of website on a more summarized level.</p>
+      </div>
+      <br>
+
+      <h2 class="post-subtitle">What could be improved</h2>
+      <div class="section post-4">
+          <h3>Directories management</h3>
+          <p>My directories are a bit messy and somewhat inefficient. I should place JS files, images, CSS files and other resources into a single directory named “Assets”. It will be much better than letting those four or more directories floating in the root directories. </p>
+          <p>And I should not place HTML files in main navigation bar in a sub-directory. It will be less error prone if I put those files in the root directory as index file when writing the HTML codes for navigation bar. That is the time I miss Jekyll’s Liquid functionality.</p>
+
+          <h3>Better artistic polishing</h3>
+          <p>I am not so satisfied with the visual result of my website, though I am really happy with what I have achieved. I love the feedback form and albums. And I think designs of home page and blog page can be improved.  </p>
+          <div class="post-image-wrapper">
+            <div class="post-image">
+              <img src="../Images/posts/post-1/5.jpg" alt="">
+              <span class="post-caption">Website Albums</span>
+            </div>
+          </div>
+      </div>
+      <br>
+
+      <div class="pagitation-container">
+          <ul>
+              <li class="page-button" onclick="prevPage()">Prev</li>
+              <span>|</span>
+              <li class="page-button" onclick="blogPage()">Blog</li>
+              <span>|</span>
+              <li class="page-button" onclick="nextPage()">Next</li>
+          </ul>
+      </div>
+
+    <!-- Close page content division. -->
+    </div>
+
+    <footer>
+         <div class="footer-content">
+            <div class="social-menu">
+                <div class="social-button facebook-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+
+                <div class="social-button twitter-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+
+                <div class="social-button linkedin-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+
+                <div class="social-button tumblr-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-tumblr"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <p>Copyright @ 2021 Game as Art.  All rights reserved.</p>
+                <p>Last updated: May 23th, 2021.</p>
+            </div>
+        </div>
+      </footer>
+
+<!-- Close body of webpage. -->
+</body>
+
+<script src="../js/social-buttons.js"></script>
+<script src="../js/pagitation.js"></script>
+
+</html>

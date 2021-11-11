@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Header section. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <title>Games as Art</title>
+</head>
+
+<!-- Body section. -->
+<body>
+
+    <!-- Background animation "Starry-night" using star image and mask image. -->
+    <div id="starry-night">
+        <img src="../Images/myStars.png" alt="" id="stars">
+        <div id="twinkling"></div>
+    </div>
+
+    <!-- Website Logo. -->
+    <h1><img src="../Images/logo-compressed.png" alt=""></h1>
+
+    <!-- Open "menu" division -->
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            
+            <li>
+                <a href="../nav/blogs.html" class="active-page">Blogs</a>
+                <ul>
+                    <li><a href="../nav/inspirations.html">Albums</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../nav/sitemap.html">Site Map +</a>
+                <ul>
+                    <li><a href="../nav/sourcelog.html">Source Logs</a></li>
+                    <li><a href="../nav/feedback.html">Feedback Form</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <!-- Close "menu" division. -->
+    </div>
+
+    <!-- Open page title division. -->
+    <div class="container home-title">
+        <h1>CSS and HTML Validations</h1>
+
+    <!-- Close page title division. -->
+    </div>
+
+    <!-- Open page content division. -->
+    <div class="container line-height last-margin post-container">
+    
+      <div class="section post-1">
+        <h2><i>	&nbsp;</i></h2>
+        <span>Zina Lu</span><span>|</span><span>May 23, 2021</span>
+        <br>
+        <br>
+      </div>
+      <br>
+
+      <h2 class="post-subtitle">CSS Validtion: main.css</h2>
+      <div class="section post-2">
+        <div class="post-image-wrapper">
+            <div class="post-image">
+              <img src="../Images/posts/post-3/1.jpg" alt="">
+              <span class="post-caption">main.css</span>
+            </div>
+          </div>
+      </div>
+      <br>
+
+      <h2 class="post-subtitle">HTML Validation</h2>
+      <div class="section post-2">
+        <div class="post-image-wrapper">
+            <div class="post-image">
+              <img src="../Images/posts/post-3/2.jpg" alt="">
+              <span class="post-caption">index.html</span>
+            </div>
+          </div>
+      </div>
+      <br>
+
+      <div class="section post-2">
+        <div class="post-image-wrapper">
+            <div class="post-image">
+              <img src="../Images/posts/post-3/3.jpg" alt="">
+              <span class="post-caption">about.html</span>
+            </div>
+          </div>
+      </div>
+      <br>
+
+      <div class="section post-2">
+        <div class="post-image-wrapper">
+            <div class="post-image">
+              <img src="../Images/posts/post-3/4.jpg" alt="">
+              <span class="post-caption">blogs.html</span>
+            </div>
+          </div>
+      </div>
+      <br>
+
+      <div class="pagitation-container">
+          <ul>
+              <li class="page-button" onclick="prevPage()">Prev</li>
+              <span>|</span>
+              <li class="page-button" onclick="blogPage()">Blog</li>
+              <span>|</span>
+              <li class="page-button" onclick="nextPage()">Next</li>
+          </ul>
+      </div>
+
+    <!-- Close page content division. -->
+    </div>
+
+    <footer>
+         <div class="footer-content">
+            <div class="social-menu">
+                <div class="social-button facebook-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+
+                <div class="social-button twitter-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+
+                <div class="social-button linkedin-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+
+                <div class="social-button tumblr-button" onclick="btClick(this)">
+                    <div class="social-icon">
+                        <i class="fa fa-tumblr"></i>
+                    </div>
+                    <span>Share</span>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <p>Copyright @ 2021 Game as Art.  All rights reserved.</p>
+                <p>Last updated: May 23th, 2021.</p>
+            </div>
+        </div>
+      </footer>
+
+<!-- Close body of webpage. -->
+</body>
+
+<script src="../js/social-buttons.js"></script>
+<script src="../js/pagitation.js"></script>
+
+</html>

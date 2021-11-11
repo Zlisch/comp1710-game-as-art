@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Header section. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <title>Games as Art</title>
+</head>
+
+<!-- Body section. -->
+<body>
+
+    <!-- Background animation "Starry-night" using star image and mask image. -->
+    <div id="starry-night">
+        <img src="../Images/myStars.png" alt="" id="stars">
+        <div id="twinkling"></div>
+    </div>
+
+    <!-- Website Logo. -->
+    <h1><img src="../Images/logo-compressed.png" alt=""></h1>
+
+    <!-- Open "menu" division -->
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            
+            <li>
+                <a href="../nav/blogs.html" class="active-page">Blogs</a>
+                <ul>
+                    <li><a href="../nav/inspirations.html">Albums</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../nav/sitemap.html">Site Map +</a>
+                <ul>
+                    <li><a href="../nav/sourcelog.html">Source Logs</a></li>
+                    <li><a href="../nav/feedback.html">Feedback Form</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <!-- Close "menu" division. -->
+    </div>
+
+    <!-- Open page title division. -->
+    <div class="container home-title">
+        <h1>Blogs</h1>
+
+    <!-- Close page title division. -->
+    </div>
+
+    <!-- Open page content division. -->
+    <div class="post-container">
+    
+        <div class="post-row">
+            <div class="post-preview">
+                <h1 class="post-preview-title"><a href="../posts/post-1.html" class="post-link">About My Site >>></a></h1>
+                <div class="post-preview-text">
+                    <p>Now I can use JavaScript to implement a simple pagination, an image slider and multiple image albums.</p>
+                    <p>Before this project I was building my own website using Jekyll, a static HTML generator with SASS empowered. But I knew nothing about JavaScript because I didn’t have a big motivation to learn it in a way with immense practices.</p>
+                </div>
+                <!-- <br> -->
+                <p><i>Zina Lu, May 2021</i></p>
+            </div>
+            <hr>
+
+            <div class="post-preview">
+                <h1 class="post-preview-title"><a href="../posts/post-2.html" class="post-link">Photography & Games >>></a></h1>
+                <div class="post-preview-text">
+                    <p>However, I hold a more positive belief about games.</p>
+                    <p>It is not obvious at the first thought, about the possible connection between photography and game. But for me they are inherently connected, since they both serve as a method of visually constructing cognitive expressions and both are important ways of human communications.</p>
+                </div>
+                <!-- <br> -->
+                <p><i>Zina Lu, Oct 2020</i></p>
+            </div>
+            <hr>
+
+            <div class="post-preview">
+                <h1 class="post-preview-title"><a href="../posts/post-3.html" class="post-link">CSS and HTML Validations >>></a></h1>
+                <div class="post-preview-text">
+                    <p>Screenshots of validation results.</p>
+                </div>
+                <!-- <br> -->
+                <p><i>Zina Lu, May 2021</i></p>
+            </div>
+            <hr>
+
+            <div class="post-preview">
+                <h1 class="post-preview-title"><a href="../posts/post-4.html" class="post-link">Photography & Games >>></a></h1>
+                <div class="post-preview-text">
+                    <p>However, I hold a more positive belief about games.</p>
+                    <p>It is not obvious at the first thought, about the possible connection between photography and game. But for me they are inherently connected, since they both serve as a method of visually constructing cognitive expressions and both are important ways of human communications.</p>
+                </div>
+                <!-- <br> -->
+                <p><i>Zina Lu, Oct 2020</i></p>
+            </div>
+            <hr class="preview-last-line">
+
+        </div>
+
+    <!-- Close page content division. -->
+    </div>
+
+    <footer>
+        <div class="footer-content">
+           <div class="social-menu">
+               <div class="social-button facebook-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-facebook"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button twitter-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-twitter"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button linkedin-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-linkedin"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button tumblr-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-tumblr"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+           </div>
+
+           <div class="footer-text">
+            <p>Copyright @ 2021 Game as Art.  All rights reserved.</p>
+            <p>Last updated: May 23th, 2021.</p>
+           </div>
+       </div>
+    </footer>
+
+<!-- Close body of webpage. -->
+</body>
+
+<script src="../js/blog.js"></script>
+<script src="../js/social-buttons.js"></script>
+
+</html>

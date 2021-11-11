@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<!-- Header section. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <title>Games as Art</title>
+</head>
+
+<!-- Body section. -->
+<body>
+
+    <!-- Background animation "Starry-night" using star image and mask image. -->
+    <div id="starry-night">
+        <img src="../Images/myStars.png" alt="" id="stars">
+        <div id="twinkling"></div>
+    </div>
+
+    <!-- Website Logo. -->
+    <h1><img src="../Images/logo-compressed.png" alt=""></h1>
+
+    <!-- Open "menu" division -->
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+
+            <li>
+                <a href="../nav/blogs.html">Blogs</a>
+                <ul>
+                    <li><a href="../nav/inspirations.html">Albums</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="../nav/feedback.html" class="active-page">Feedback Form +</a>
+                <ul>
+                    <li><a href="../nav/sitemap.html">Site Map</a></li>
+                    <li><a href="../nav/sourcelog.html">Source Logs</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <!-- Close "menu" division. -->
+    </div>
+
+    <!-- Open page title division. -->
+    <div class="container">
+        <div id="replyform-title">
+            <h1 id="feedback-logo">Give your feedbacks</h1>
+        </div>
+
+    <!-- Close page title division. -->
+    </div>
+
+    <!-- Open form content division. -->
+    <div class="form-main line-height">
+
+        <!-- Open feedback form. -->
+        <form enctype="text/plain" action="mailto:u7165475@anu.edu.au" method="post">
+
+            <!-- Open the left part of form's division. -->
+            <div id="left-form" class="feedback-form">
+                <h3>Your experience.</h3>
+                <div class="feedback-question">
+                    <label for="general">Did you enjoy your visiting?</label>
+                    <br/>
+                    <input type="range" name="general" id="general">
+                </div>
+    
+                <div>
+                    <label for="favourite">What is your favourite part of experience?</label>
+                    <br/>
+                    <textarea name="favourite" id="favourite" cols="30" rows="10" placeholder="What my website did well ..." class="text-box" wrap="soft"></textarea>
+                </div>
+    
+                <div>
+                    <label for="improve">What can be improved?</label>
+                    <br/>
+                    <textarea name="improve" id="improve" cols="30" rows="10" placeholder="e.g. Did you find what you need? ..." class="text-box" wrap="soft"></textarea>
+                </div>
+
+            <!-- Close the left part of form's division. -->
+            </div>
+
+            <!-- Open the right part of form's division. -->
+            <div id="right-form" class="feedback-form">
+                <h3>Thank you for the feedbacks.</h3>
+                <div>
+                    <label for="name">Your full name</label>
+                    <br/>
+                    <input type="text" name="name" id="name" placeholder="Full name" class="text-box" wrap="soft">
+                </div>
+    
+                <div>
+                    <label for="email">Your email address</label>
+                    <br/>
+                    <input type="text" name="email" id="email" placeholder="Enter email address" class="text-box" wrap="soft">
+                </div>
+    
+                <div>
+                    <label for="opinions">Any last opinions?</label>
+                    <br/>
+                    <textarea name="opinions" id="opinions" cols="30" rows="10" placeholder="Opinions ..." class="text-box" wrap="soft"></textarea>
+                </div>
+    
+                <div>
+                    <input type="submit" value="Send" class="button button-submit">
+                    <input type="reset" value="Clear" class="button button-clear">
+                </div>
+
+            <!-- Close the right part of form's division. -->
+            </div>
+
+        <!-- Close feedback form. -->
+        </form>
+    <!-- Open form content division. -->
+    </div>
+
+    <footer>
+        <div class="footer-content">
+           <div class="social-menu">
+               <div class="social-button facebook-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-facebook"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button twitter-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-twitter"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button linkedin-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-linkedin"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button tumblr-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-tumblr"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+           </div>
+
+           <div class="footer-text">
+            <p>Copyright @ 2021 Game as Art.  All rights reserved.</p>
+            <p>Last updated: May 23th, 2021.</p>
+           </div>
+       </div>
+    </footer>
+
+<!-- Close body of webpage. -->
+</body>
+
+<script src="../js/social-buttons.js"></script>
+
+</html>

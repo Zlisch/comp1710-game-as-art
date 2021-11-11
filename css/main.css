@@ -1,0 +1,1209 @@
+/* This is the main style sheet for the website. */
+
+/* Set the local font for social button text. */
+@font-face {
+    font-family: "share-buttons";
+    src: url("../assets/Poppins-Regular.otf");
+}
+
+/* General css rules for all website pages. */
+/* Default color of texts set to white. */
+* {
+    color: white;
+}
+
+/* The color of starry-night animation background. */
+body {
+    background-color: #07002e;
+}
+
+/* Default hyperlink decoration set to none. */
+a {
+    text-decoration: none;
+}
+
+/* Starry-night animation. */
+/* Position star image with transparent background to the bottom of web page. */
+#starry-night img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+/* Position mask image over the star image. Animate the mask image. */
+#starry-night #twinkling {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/mask.png);
+    animation: mask-twinkling 30s linear infinite;
+    z-index: -1;
+}
+
+/* Move and change the opacity of mask image. */
+@keyframes mask-twinkling {
+    0% { opacity: 1; }
+    40% { opacity: 0; 
+        transform: translate(-30%, -20%);}
+    70% { opacity: 1; }
+}
+
+/* Default page title text alignment set to center. */
+h1 {
+    text-align: center;
+}
+
+/* Size the width and height of website logo. */
+h1 img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Style menu bar and drop down menu. */
+/* Alignment of menu buttom text set to center. */
+#menu {
+    text-align: center;
+}
+
+/* Style the box size of menu bar. */
+#menu ul {
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+/* Style the display and padding of menu bar list elements. */
+#menu ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+/* Style the position and visibility of drop down menu. */
+#menu ul li ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Hover over the menu bar list element to view the drop down menu. */
+#menu ul li:hover > ul {
+    visibility: visible;
+}
+
+/* Style the postion and display of drop down menu's list elements. */
+#menu ul li ul li {
+    position: relative;
+    display: list-item;
+    width: 150px;
+}
+
+/* Hide the marker of drop down menu's list elements. */
+#menu ul li ul li::marker {
+    color: transparent;
+}
+
+/* Style the background of drop down menu's anchor tags. */
+#menu ul li > ul a {
+    background-color: #ffffff57;
+    box-shadow: 0 0 5px #ffffff57, 0 0 10px #ffffff57;
+}
+
+/* Style the box model of drop down menu's anchor tags. */
+#menu ul li ul li a {
+    position: absolute;
+    left: 0;
+}
+
+/* Style the box of all menu bar anchors and animate hovering transition. */
+#menu a {
+    padding: 8px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition-property: box-shadow, color, background-color;
+    transition-duration: 0.5s;
+}
+
+/* Style the color of anchor text to show current page. */
+#menu .active-page {
+    color: red;
+}
+
+/* Style the hover text color, background and box shadow. */
+#menu a:hover {
+    color: red;
+    background-color: white;
+    box-shadow: 0 0 5px red, 0 0 10px red;
+}
+
+/* Style the general page layout. */
+/* Default line height set for better text reading experience. */
+.line-height {
+    line-height: 2.5;
+}
+
+/* Style the margin-bottom of the last division tag in a page. */
+.last-margin {
+    margin-bottom: 10%;
+}
+
+/* Style the box model and background deisgn for page container. */
+.container {
+    background-color: #8080809e;
+    box-shadow: 10px 10px 5px red;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+}
+
+/* Style the sitemap.html. */
+/* Style the display and box size of sitemap page. */
+.container .site-map-category {
+    height: 500px;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Style the sitemap page's anchor tags color when hovering. */
+.container .site-map-category a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Style the size of flex column grids to display two columns. */
+.container .site-map-category > * {
+    flex: 1 1 100px;
+}
+
+/* Style the site map page logo which is a h1 tag. */
+.container .site-map-logo {
+    margin-top: 30px;
+    font-size: 3em;
+    text-align: left;
+}
+
+/* Style the list elements to no bullet points. Style the box size of list elements. */
+.container .list-nobullet {
+    width: 250px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Style the color of unfinished pages' anchor tags. */
+.none {
+    color: gray;
+}
+
+/* Style the display and margin-top of all listed anchor tags. */
+.container .list-nobullet a {
+    display: block;
+    margin-top: 8%;
+}
+
+/* Style the margin-top of every map section. */
+.container .category-section {
+    margin-top: 30px;
+}
+
+/* Style the h1 box and font size of every map section. */
+.container .category-section h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 3em;
+    border-left: 5px solid white;
+}
+
+/* Style feedback.html. */
+.form-main {
+    margin-bottom: 18%;
+}
+/* Style the box model and display flex of form. */
+.form-main form {
+    height: 300px;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Style the margin-top of every question division. */
+.form-main .feedback-form div {
+    margin-top: 10px;
+}
+
+/* Style the margin-top of every input tag. */
+input {
+    margin-top: 10px;
+}
+
+/* Style the length of range input bar to 80%. */
+input[type="range"] {
+    width: 80%;
+}
+
+/* Style the margin-top and box height of textarea tag. */
+textarea {
+  height: 4em;
+  margin-top: 10px;
+}
+
+/* Style background design of every text box. Style width of text box to 80%. */
+.text-box {
+    width: 80%;
+    color: white;
+    background-color: #8080809e;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white, 0 0 10px white;
+}
+
+/* When text box being selected, placeholder texts move right to response. */
+.text-box:focus::placeholder {
+    padding-left: 10px;
+    color: #e0e0e0;
+}
+
+/* Style placeholder padding and text color. */
+.text-box::placeholder {
+    padding-left: 5px;
+    color: #e0e0e0;
+}
+
+/* Style box size and cursor of buttons. */
+.button {
+    margin-top: 5px;
+    height: 2em;
+    width: 40%;
+    cursor: pointer;
+}
+
+/* Style the submit button. */
+input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+}
+
+/* Style the clear button. */
+input[type="reset"] {
+    border: none;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Style the padding-bottom of left and right forms for coherence of the website. */
+#left-form, #right-form {
+    padding-bottom: 10%;
+}
+
+/* Style sourcelog.html. */
+/* Fixed the width of table elements to 80%. */
+table {
+    width: 80%;
+}
+
+/* Style the border of table and cells. */
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+
+/* Style the padding of cells. */
+th, td {
+    padding: 2px 10px 2px 10px;
+}
+
+/* Align the h1 box margins and texts of two table divisions. */
+.reference-table h1, .original-table h1 {
+    margin-left: 12%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+/* Style margins of two table elements. */
+.reference-table table, .original-table table {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Style the margin-bottom of the botton table for coherence of the website.. */
+.original-table table {
+    margin-bottom: 6%;
+}
+
+/* Style the color and text decoration of hyperlinks. */
+.source-table a {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Style the link color of anchor tags when hovering. */
+.source-table a:hover {
+    color: white;
+}
+
+/* CSS for index.html */
+/* Style the margin-bottom of page title division. */
+.home-title {
+    margin-bottom: 5%;
+}
+
+/* Style the size of inline logo graphic in page title paragraph. */
+.inline-logo {
+    width: 15%;
+    display: inline;
+}
+
+/* Style the link color on home page when hovering. */
+.home-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Also apply to about.html. */
+/* Style the box and text of image caption. */
+.image-wrapper h6 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+/* Style the box and display of image element. */
+.home-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+/* Style about.html. */
+/* Style the margin-bottom of first two paragraphs. */
+.p-1, .p-2 {
+    margin-bottom: 5%;
+}
+
+/* Style blogs.html. */
+/* Style the box and background design of post container division. */
+.post-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+.post-preview-title {
+    text-align: left;
+}
+
+.post-preview {
+    padding: 10px;
+    transition: all .4s ease;
+    position: relative;
+    border-bottom: 10px solid #ffffff00;
+}
+
+.post-preview:hover {
+    background-color: #8080809e;
+    border-bottom: 10px solid white;
+}
+
+.post-preview a {
+    transition: all .3s ease;
+    border-bottom: 3.5px solid #ffffff00;
+}
+
+.post-preview a:hover {
+    color: red;
+    border-bottom: 3.5px solid red;
+}
+
+/* Direct child only. */
+.post-preview > p {
+    margin-top: 5%;
+}
+
+.post-preview h1 {
+    margin-bottom: 10px;
+}
+
+.post-preview-text p:not(:last-child) {
+    margin-top: 0;
+    font-size: .9em;
+    margin-bottom: 2%;
+}
+
+.preview-last-line {
+    margin-bottom: 10%;
+}
+
+/* Style inspirations.html. */
+/* Main gallery div cotains all the displayed albums. */
+.gallery {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+/* Set album width and height, and its box model. */
+.gallery .itemBox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+/* Move images in gallery behind slider button bar for easier navigation. */
+/* Set image shadow to be prebiew box shadow. */
+.gallery .itemBox img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    box-shadow: 5px 5px 15px #04001c;
+}
+
+/* Move slider button bar to the front of the album. */
+.front-gallery li {
+    z-index: 1;
+}
+
+/* Hide unfinished filter tags. */
+.gallery-tags {
+    margin-bottom: 5%;
+    /* display: none; */
+}
+
+.gallery-tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    background-color: #ffffff1e;
+    box-shadow: 5px 5px 15px #04001c;
+}
+
+.gallery-tags ul li {
+    list-style: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0 0 2px white, 0 0 5px white;
+    margin: 8px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.gallery-tags .active, .gallery-tags ul li:hover {
+    background-color: purple;
+    box-shadow: inset 0 0 10px rgb(58, 1, 58);
+}
+
+/* Album cover. */
+/* Set width and height of the album cover. */
+/* Set box model of the album cover. */
+.itemBox-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+/* Album cover text general. */
+/* Position texts and animate texts on album cover. */
+.itemBox-overlay > * {
+    transform: translateY(5px);
+    transition: transform .25s;
+}
+
+/* Album cover hover animation. */
+.itemBox-overlay:hover {
+    opacity: 1;
+    border-style: groove;
+    border-width: 5px;
+    border-color: red;
+    box-shadow: inset 0 0 30px rgba(2, 0, 2, 0.85);
+}
+
+/* Album cover's texts hover animation. */
+.itemBox-overlay:hover > * {
+    transform: translateY(0); 
+}
+
+/* Position the album cover text by seting box model. */
+.overlay-text {
+    position: absolute;
+    left: 6%;
+    bottom: 3%;
+}
+
+/* Position the album cover text higher from bottom. */
+.overlay-text > * {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Album cover title. */
+/* Set the font of album cover title text. */
+.overlay-title {
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-bottom: 3.5px solid white;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+}
+
+/* Set the hover effect of album cover title. */
+.overlay-title:hover {
+    color: red;
+    border-bottom: 3.5px solid red;
+    cursor: pointer;
+}
+
+/* Album cover tags */
+/* Set the box model of album cover tag wrapper. */
+.text-tags {
+    margin-top: 13px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+/* Set the box model of album cover tags. */
+.text-tags li {
+    margin-top: 5px;
+    margin-right: 6px;
+    list-style: none;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    font-size: .8em;
+}
+
+/* Color the specific album cover tags. */
+.text-tags .tag-maps {
+    background-color: rgb(74, 164, 1);
+    box-shadow: inset 0 0 10px rgb(26, 58, 0);
+}
+
+/* Color the specific album cover tags. */
+.text-tags .tag-annotated {
+    background-color: rgb(138, 0, 138);
+    box-shadow: inset 0 0 10px rgb(55, 0, 55);
+}
+
+/* Color the specific album cover tags. */
+.text-tags .tag-notes {
+    background-color: rgb(74, 164, 1);
+    box-shadow: inset 0 0 10px rgb(26, 58, 0);
+}
+
+/* Color the specific album cover tags. */
+.text-tags .tag-unfinished {
+    background-color: rgb(186, 25, 25);
+    box-shadow: inset 0 0 10px rgb(58, 1, 58);
+}
+
+/* Preview box. */
+/* Set the box model of preview box. */
+.preview-box {
+    position: fixed;
+    width: 900px;
+    height: 598px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease;
+    z-index: 2;
+}
+
+/* Javascript animates preview box. */
+.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all .3s ease;
+}
+
+.preview-title {
+    position: absolute;
+    z-index: 2;
+    padding: 5px 8px 5px 8px;
+    bottom: 8px;
+    right: 8px;
+    border-radius: 6px;
+    background-color: rgba(53, 53, 53, 0.31);
+}
+
+/* Set the box model and font of preview box footer wrapper. */
+.preview-count {
+    margin: 0;
+    display: flex;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* Set the marigin of "/" symbol inside the footer wrapper. */
+.preview-count p {
+    margin: 0;
+}
+
+/* Set the margin of footer text. */
+.preview-title .preview-count .current-image {
+    margin-right: 8px;
+}
+
+/* Set the margin of footer text. */
+.preview-title .preview-count .total-image {
+    margin-left: 8px;
+}
+
+/* Preview box quit text box as quit button. */
+/* Set the box model and designs of quit text box. */
+.preview-quit {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: Verdana;
+    background-color: rgba(150, 0, 0, 0.543);
+    transition: .5s ease;
+}
+
+/* Set the hovering effects of preview box quit button. */
+.preview-quit:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+/* Slider. */
+/* Postion slider and set the box model of slider wrapper. */
+.slider-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.755), 0 0 30px rgba(0, 0, 0, 0.755);
+}
+
+/* Set the box model of slides wrapper. */
+/* Four times the length of each slide. */
+.slides {
+    width: 400%;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Hide redio selection button. */
+.slides input {
+    display: none;
+}
+
+/* Set width of each slide to 100% of image width. */
+.slide {
+    width: 25%;
+    /* transition: all 2s ease; */
+}
+
+/* Slider navigation bar. */
+/* Position and set the box model of slider navi wrapper. */
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    bottom: 12px;
+}
+
+/* Design the navi button. Postion, shape and color. */
+.manual-button {
+    z-index: 1;
+    border: 3px solid red;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Set the margin among navi buttons. */
+.manual-button:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Set the hovering effects of navi buttons. */
+.manual-button:hover {
+    /* box-shadow: 0 0 1px white, 0 0 1px white; */
+    background-color: red;
+}
+
+/* Move the first image in album to right to display other images. */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+/* Further move the first image in album to right to display other images. */
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+/* Further move the first image in album to right to display other images. */
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+/* Further move the first image in album to right to display other images. */
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+
+/* Display a shadow box behind the preview box. */
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    transition: all .3s ease;
+}
+
+/* Two annotations: one mapped circle and one mapped poly. */
+/* Align annotation image with slide and hide. */
+.mask-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .6s ease;
+}
+
+/* Set mapper area to cursor: pointer. */
+.map-circle {
+    cursor: pointer;
+}
+
+/* Set mapper area to cursor: pointer. */
+.map-poly {
+    cursor: pointer;
+}
+
+/* Align annotation image with slide and hide. */
+.mask-annotation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .6s ease;
+}
+
+/* Align special annotation image with slide and hide. */
+.special-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+/* Set special mapper area to cursor: pointer. */
+.special-map-poly {
+    cursor: pointer;
+}
+
+.special-map-poly:hover {
+    opacity: 0.5;
+}
+
+/* Footer and social share button */
+/* Set box model values of overall footer. */
+footer {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+}
+
+/* Set the whitespace between footer and the end of window. */
+.social-menu {
+  margin-bottom: 50px;
+}
+
+/* Set footer container's flex box value. */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General design of all social buttons. */
+.social-button {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    box-shadow: 0 0 1px white, 0 0 2px white;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .2s ease-out;
+    vertical-align: middle;
+}
+
+/* Set the whitespace value between social buttons. */
+.social-button:not(:last-child) {
+    margin-right: 60px;
+}
+
+/* Set the box model of button icons. */
+.social-button .social-icon {
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 58px;
+    transition: all .2s ease-out;
+}
+
+/* Set the color of facebook icon. */
+.social-button:nth-child(1):hover .social-icon {
+    background-color: #3b5999;
+    box-shadow: 0 0 2px rgba(84, 84, 84, 0.87), 0 0 2px rgba(84, 84, 84, 0.87), inset 0 0 10px #223868;
+}
+
+/* Set the color of twitter icon. */
+.social-button:nth-child(2):hover .social-icon {
+    background-color: #55acee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 10px #0d89e7;
+}
+
+/* Set the color of linkedin icons. */
+.social-button:nth-child(3):hover .social-icon {
+    background-color: #0077B5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 10px #03486d;
+}
+
+/* Set the color of tumblr icons. */
+.social-button:nth-child(4):hover .social-icon {
+    background-color: #34465d;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), inset 0 0 10px #162231;
+}
+
+/* Set the color of facebook text. */
+.social-button:nth-child(1):hover span {
+    color: #3b5999;
+}
+
+/* Set the color of twitter text. */
+.social-button:nth-child(2):hover span {
+    color: #55acee;
+}
+
+/* Set the color of linkedin text. */
+.social-button:nth-child(3):hover span {
+    color: #0077B5;
+}
+
+/* Set the color of tumblr text. */
+.social-button:nth-child(4):hover span {
+    color: #34465d;
+}
+
+/* Set the size of social button icons. */
+.social-button .social-icon i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+/* Set font and font size for social button text. */
+.social-button span {
+    font-family: share-buttons;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: text-bottom;
+    margin-left: 10px;
+}
+
+/* Set the box shadow for button text part. */
+.social-button:hover {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5), inset 0 0 10px black;
+    width: 155px;
+    box-shadow: none;
+    border: none;
+}
+
+/* Set the font of footer text. */
+.footer-text {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 1em;
+}
+
+/* Set footer text color to grey. */
+.footer-text p {
+    color: #d6d6d6;
+}
+
+/* For posts, e.g. post-1.html, in '/posts'. */
+/* Larger font for blog posts. Except title. */
+.post-container:not(h1) {
+    font-size: larger;
+}
+
+/* More innerly indent the text. Except title. */
+.container:not(h1) > * {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* The format for first paragraph. Left align the sub-title. */
+.section .post-1 h2 {
+    text-align: left;
+}
+
+/* Set the whitespace for caption text. */
+.section span {
+    margin-right: 15px;
+    margin-bottom: 4%;
+}
+
+/* Set the whitespace for second paragraph float iframe. */
+.post-2 .iframe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+/* Shadows for iframe card. */
+.section iframe {
+    box-shadow: 0 0 1px rgba(23, 23, 23, 0.75), 0 0 3px rgba(23, 23, 23, 0.75);
+}
+
+/* Set font for caption text. */
+.post-caption {
+    font-size: .8em;
+    text-align: center;
+}
+
+/* Set whitespaces for each large paragraph. */
+.section {
+    margin-bottom: 1%;
+}
+
+/* Set whitespace for all small paragraphs except the last paragraph. */
+.section p:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 4%;
+}
+
+/* Align the iframe feed card and its caption text tag. */
+.feed-section {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Set the format for blog paragraph with iframe. */
+.feed-section div {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Format the sub-title. */
+.post-subtitle {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+/* Set the flex box value for fourth paragraph flex iframe. */
+.post-4 .iframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Set whitespace for fourth paragraph. */
+.post-4 p {
+    margin-top: 4%;
+    margin-bottom: 8%;
+}
+
+/* Align caption text with fourth paragraph's iframe. */
+.post-4 span {
+    max-width: 530px;
+}
+
+/* Set parent of image div to flex. */
+.post-image-wrapper {
+    display: flex;
+}
+
+/* Align floating paragraph's top with image's top. */
+.post-image-wrapper p {
+    margin-top: 0;
+}
+
+/* Set the flex box value for image div. */
+.post-2 .post-image {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+/* Box shadow for image. */
+.post-2 .post-image img {
+    box-shadow: 1px 1px 3px rgba(44, 43, 43, 0.82), 1px 1px 3px rgba(44, 43, 43, 0.82);
+}
+
+/* Align fourth paragraph's image to center by setting its's div's parent. */
+.post-4 .post-image-wrapper {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Align fourth paragraph's image to center by setting its's div. */
+.post-4 .post-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Set the whitespace below the images. */
+.post-image img {
+    margin-bottom: 18px;
+}
+
+/* Shadow for image in paragraph four. */
+.post-4 img {
+    box-shadow: 5px 5px 8px rgba(44, 43, 43, 0.82), 5px 5px 8px rgba(44, 43, 43, 0.82);
+}
+
+/* Pagitation for all post pages. For example 'post-1.html'. */
+/* Set pagitation container to flex box. */
+.pagitation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+/* Set the flex box of pagitation element's direct parent and center. */
+.pagitation-container ul {
+    display: flex;
+    padding: 0;
+}
+
+/* Set the style for li's in pagination menu. */
+.pagitation-container ul > * {
+    list-style: none;
+    text-align: center;
+    line-height: 45px;
+    font-size: 1.1em;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.pagitation-container ul li{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.pagitation-container ul li:hover {
+    color: red;
+}
+
+/* Set whitespace among li's in paginatio menu. */
+.pagitation-container ul li:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* Disable pagination button when overflow. */
+.block-button {
+    pointer-events: none;
+}
+
+/* Style the print button for sourcelog.html print preview. */
+/* Grandparent container. */
+.printer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10%;
+}
+
+/* Direct parent container. */
+.printer-button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 4px black;
+}
+
+/* Set the texx color and mouse interaction of buttun. */
+.printer-button span {
+    color: black;
+    margin: auto;
+    cursor: pointer;
+}

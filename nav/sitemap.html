@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Header section. -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <title>Site Map</title>
+</head>
+
+<!-- Body section. -->
+<body>
+
+    <!-- Background animation "Starry-night" using star image and mask image. -->
+    <div id="starry-night">
+        <img src="../Images/myStars.png" alt="" id="stars">
+        <div id="twinkling"></div>
+    </div>
+
+    <!-- Website Logo. -->
+    <h1><img src="../Images/logo-compressed.png" alt=""></h1>
+
+    <!-- Open "menu" division -->
+    <div id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+
+            <li>
+                <a href="../nav/blogs.html">Blogs</a>
+                <ul>
+                    <li><a href="../nav/inspirations.html">Albums</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="sitemap.html" class="active-page">Site Map +</a>
+                <ul>
+                    <li><a href="../nav/sourcelog.html">Source Logs</a></li>
+                    <li><a href="../nav/feedback.html">Feedback Form</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    <!-- Close "menu" division. -->
+    </div>
+
+    <!-- Open page content division. -->
+    <div class="container last-margin">
+
+        <!-- Open site map section. -->
+        <section class="site-map-category">
+
+            <!-- Use font logo for site map page instead of title. -->
+            <h1 class="site-map-logo list-nobullet">Site Map</h1>
+
+            <!-- Links of "Home". -->
+            <li class="list-nobullet" id="home-map">
+                <section class="category-section">
+                    <h1>Home</h1>
+                    <ul class="list-nobullet">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="none"><a href="about.html">Me and My Passion</a></li>
+                        <li class="none"><a href=""></a>Features</li>
+                        <li class="none"><a href=""></a>Bio & Contacts</li>
+                    </ul>
+                </section>
+            </li>
+
+            <!-- Links of "Blogs". -->
+            <li class="list-nobullet" id="blogs-map">
+                <section class="category-section">
+                    <h1>Blogs</h1>
+                    <ul class="list-nobullet">
+                        <li><a href="blogs.html">Posts</a></li>
+                        <li><a href="../posts/post-1.html">About My Site</a></li>
+                        <li><a href="inspirations.html">Albums</a></li>
+                        <li><a href="../posts/post-3.html">Validations</a></li>
+                    </ul>
+                </section>
+            </li>
+
+            <!-- Links of "Site Map +". -->
+            <li class="list-nobullet" id="logs-map">
+                <section class="category-section">
+                    <h1>Site Map +</h1>
+                    <ul class="list-nobullet">
+                        <li><a href="sitemap.html">Site Map</a></li>
+                        <li><a href="sourcelog.html">Source Logs</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                    </ul>
+                </section>
+            </li>
+
+        <!-- Close site map section. -->
+        </section>
+
+    <!-- Close page content division. -->
+    </div>
+
+    <footer>
+        <div class="footer-content">
+           <div class="social-menu">
+               <div class="social-button facebook-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-facebook"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button twitter-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-twitter"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button linkedin-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-linkedin"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+
+               <div class="social-button tumblr-button" onclick="btClick(this)">
+                   <div class="social-icon">
+                       <i class="fa fa-tumblr"></i>
+                   </div>
+                   <span>Share</span>
+               </div>
+           </div>
+
+           <div class="footer-text">
+            <p>Copyright @ 2021 Game as Art.  All rights reserved.</p>
+            <p>Last updated: May 23th, 2021.</p>
+           </div>
+       </div>
+    </footer>
+
+<!-- Close body of webpage. -->
+</body>
+
+<script src="../js/social-buttons.js"></script>
+
+</html>
